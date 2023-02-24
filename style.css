@@ -1,0 +1,615 @@
+/* font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Manrope', sans-serif; */
+
+
+body {
+    margin: 0;
+
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    /* Чтобы сгладить шрифты св-во ниже */
+    -webkit-font-smoothing: antialiased;
+
+    background-color: #1E1E1E;
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+
+/* Container
+======================== */
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    /* 1440px */
+}
+
+
+/* Header
+======================== */
+.header {    
+    width: 100%;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 52px 0;
+    align-items: center;
+}
+
+.header__logo-text {
+    position: absolute;
+    z-index: 2;    
+    padding-left: 131px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;    
+}
+
+.header__logo {
+    position: relative;
+    top: -24px;
+    left: 119px;
+}
+
+.header__logo1, 
+.header__logo2 {
+    position: absolute;
+    z-index: 1;    
+}
+
+
+
+/* Nav
+======================== */
+.nav {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+
+    align-items: center;
+
+}
+
+.nav__link {
+    margin-left: 48px;
+    text-decoration: none;    
+    color: #FFFFFF;
+    opacity: .65;
+
+    transition: opacity .2s linear;
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+
+/* .nav__link:last-child {
+    margin-left: 96px;
+} */
+
+.nav__link:hover {
+    opacity: 1;
+    /* text-decoration: underline; */
+}
+
+/* Button
+======================== */
+/* .btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid #fff;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+    background-color: #fff ;
+    color: #202ccf;
+} */
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 12px 24px;
+
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #FFFFFF;   
+    background-color: #EE8313; 
+
+    transition: background .2s linear, color .2s linear;
+}
+
+    .btn:hover {
+        background-color: #f3680c;
+        color: rgba(241, 238, 13, 0.87);
+    }
+
+.btn--header {
+    margin-left: 96px;    
+    width: 184px;
+    height: 48px;    
+}
+
+.btn--buy {
+    width: 119px;
+    height: 48px;
+    left: 120px;
+    top: 519px;
+    margin-right: 60px;
+
+}
+
+.btn--video {
+    background: none;
+    color: #EE8313;
+    border: 1px solid #EE8313;
+}
+
+
+/* Intro
+======================== */
+.intro {
+    display: flex;
+    flex-direction: column;
+    height: 780px;
+    padding-top: 100px;
+
+    background: #1E1E1E;
+
+    margin-bottom: 187px;
+
+
+    /* padding-top: 100px;
+    height: 540px;
+    width: 1080px; */
+    /* margin-top: 240px;
+    margin-left: 560px; */
+    /* background: #1E1E1E url("/HTML 2/Сайт Фигма/Ferrariti/image/mustang-coupe.png") right no-repeat; */    
+}
+
+.intro__inner {
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    padding-left: 120px;
+    color: #FFFFFF;
+} 
+
+.intro__content {
+    width: 65%;
+}
+
+.inro__title {
+    margin-top: 167px;
+    margin-bottom: 32px;
+    
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+}
+
+.intro__subtitle {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;  
+    margin-bottom: 60px;  
+}
+
+.intro__img {
+    position: absolute;
+    top: -30px;
+    width: 1076px;
+
+    height: auto;
+    left: 560px;
+}
+
+.intro__stat {
+    display: flex;
+    margin-top: 40px;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.intro__cars {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.intro__lux {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/* Rent
+======================== */
+.rent__header {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.rent {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0 120px;
+    padding-left: 120px;
+    
+
+}
+
+.rent__item {
+    width: 50%;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.rent__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 272px;
+    height: 52px;
+    margin: 48px 264px 424px 48px;
+
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.rent__text {
+    position: absolute;
+    margin: 444px 90px 48px 389px;
+    bottom: 0;
+    right: 90px;
+    width: 105px;
+    height: 32px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.rent__text i {
+    position: absolute;
+
+    width: 8px;
+    height: 16px;
+    margin-left: 22px;
+    top: 5px;
+
+    color: #FFCC2C;
+}
+
+
+/* Services
+======================== */
+.services__header {
+    margin: 120px 0 66px;
+    padding-left: 120px;
+
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+
+    color: #FFFFFF;
+}
+
+
+.services__content {
+    padding-left: 120px;
+    padding-right: 79px;
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+
+    margin-bottom: 120px;
+}
+
+/* .services__img {
+    margin-right: 24px;
+    width: 384px;
+    height: 360px;
+} */
+
+.services__title {
+    margin: 24px 0 16px;
+    width: 384px;
+    height: 32px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.services__subtitle {
+    margin: 16px 0 120px;
+    width: 384px;
+    height: 84px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    opacity: .8;
+    color: #FFFFFF;
+}
+
+
+/* Rental
+======================== */
+
+.rental__header {
+    text-align: center;
+    margin-bottom: 40px;
+
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+    color: #FFFFFF;
+}
+
+.rental__content {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-left: 120px;
+    margin-bottom: 160px;
+}
+
+.rental__item {
+    width: 33.3333%;
+    margin-bottom: 24px;
+}
+
+.rental__title {
+    margin: 24px 0 10px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.rental__subtitle {
+    margin-bottom: 25px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    opacity: .8;
+}
+
+.rental__price {
+    margin-bottom: 17px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.rental__price i {
+    margin-right: 19px;
+    z-index: 1;
+}
+
+.rental__search {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #EE8313;
+}
+
+
+/* Map
+======================== */
+.location {
+    padding-left: 120px;
+    margin-bottom: 1000px;
+}
+
+.Location__header {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.map {
+    position: relative;
+}
+
+.map__img {
+    position: absolute;
+    
+    width: 1270px;
+}
+
+/* Footer
+======================== */
+.footer {
+    padding-top: 65px;background-color: #1F1905;
+}
+
+.footer__inner {
+    display: flex;
+    padding-bottom: 65px;
+    justify-content: space-between;
+
+    padding-left: 120px;
+}
+
+.footer__col--first {
+    width: 46%;
+}
+
+.footer__col--second {
+    width: 13%;
+}
+
+.footer__col--third {
+    width: 13%;
+}
+
+.footer__col--fourth {
+    width: 13%;
+}
+
+.footer__col--fifth {
+    width: 13%;
+}
+
+/* ============ */
+.footer__logogo {
+    position: relative;
+    padding-bottom: 31px;
+}
+
+.footer__logo {
+    position: absolute;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    left: 13px;
+    top: 11px;
+    z-index: 2;
+    vertical-align: middle;
+}
+
+.footer__logo1, 
+.footer__logo2 {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+/* ================== */
+
+
+.footer__logo-item {
+    position: absolute;
+    vertical-align: middle;
+    left: 70px;
+    top: 13px;
+    
+}
+
+.footer__text {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+
+    width: 235px;
+    height: 64px;
+}
+
+.footer__title {
+    margin: 30px 0;
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.about__item {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about__item a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-bottom: 30px;
+    opacity: .8;
+}
+
+.about__item a:hover {
+    text-decoration: underline;
+}
+
+
+/* Copyright =========================== */
+.copyright {
+    padding: 20px 0;
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+
+    border-top: 1px solid #EE8313;
+
+    background-color: #EE8313;
+}
+
+
+
+
+
+
+
+
+
+
